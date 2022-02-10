@@ -1,0 +1,96 @@
+.header-banner{
+  position: relative;
+  padding: 175px 0;
+  margin-bottom: 60px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &--23{
+    background-image: url("../img/23/1screen_bg.jpg");
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../img/23/flag_left.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 206px;
+      height: 126px;
+      pointer-events: none;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/23/flag_right.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 206px;
+      height: 134px;
+      pointer-events: none;
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 129px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
+    margin: 0;
+  }
+  &__subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.006em;
+    color: #B0B378;
+    margin: 0;
+  }
+  &__logo{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%,0);
+    max-width: 277px;
+    pointer-events: none;
+  }
+  &__menu{
+    position: absolute;
+    bottom: -21px;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  img{
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
+  }
+  @include r(767){
+    &--23{
+      background-image: url("../img/23/1screen_mobile_bg.jpg");
+      &:before,
+      &:after{
+        display: none;
+      }
+      .header-banner__logo{
+        display: none;
+      }
+    }
+    &__title{
+      font-size: 50px;
+      line-height: 54px;
+    }
+    &__subtitle{
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+}

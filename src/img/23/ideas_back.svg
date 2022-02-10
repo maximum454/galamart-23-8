@@ -1,0 +1,25 @@
+<svg width="1920" height="480" viewBox="0 0 1920 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6">
+<circle cx="906" cy="470" r="9.5" stroke="#CDCEC0"/>
+<circle cx="906" cy="470" r="5" fill="#CDCEC0"/>
+<circle cx="26" cy="10" r="9.5" stroke="#CDCEC0"/>
+<circle cx="26" cy="10" r="5" fill="#CDCEC0"/>
+<circle cx="1645" cy="54" r="9.5" stroke="#CDCEC0"/>
+<circle cx="1645" cy="54" r="5" fill="#CDCEC0"/>
+<path d="M-20 10C618 10 418 472 955 472" stroke="url(#paint0_linear)" stroke-dasharray="6 10"/>
+<path d="M1930 10C1292 10 1492 472 955 472" stroke="url(#paint1_linear)" stroke-dasharray="6 10"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="18" y1="51" x2="819" y2="554" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7C7F33" stop-opacity="0"/>
+<stop offset="0.458333" stop-color="#7C7F33"/>
+<stop offset="1" stop-color="#7C7F33" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="1828" y1="40" x2="851" y2="490" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7C7F33" stop-opacity="0.29"/>
+<stop offset="0.153968" stop-color="#7C7F33" stop-opacity="0"/>
+<stop offset="0.494792" stop-color="#7C7F33"/>
+<stop offset="1" stop-color="#7C7F33" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

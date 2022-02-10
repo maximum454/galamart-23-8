@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "Подарки на 23 февраля в интернет-магазине Галамарт, купить оригинальные подарки мужчинам, мальчикам, папе",
+    "description": "Необычные подарки на 23 февраля с бесплатной доставкой в магазинах Галамарт. Подарки мужчинам, мальчикам, коллегам по работе, папе, детям, любимому парню, в школу — акции и скидки.",
+    })
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/galamart-23-8.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="wrp">
+        <div class="header-banner header-banner--23">
+            <div class="header-banner__logo">
+                <img src="./img/23/balloons.png" width="338" height="326" alt="23 февраля логотип">
+            </div>
+            <h1 class="header-banner__title">Выбирайте подарки</h1>
+            <h2 class="header-banner__subtitle">для настоящих мужчин</h2>
+            <div class="header-banner__menu menu">
+                <a href="#" class="menu__item active">
+                    <div class="menu__img">
+                        <img src="./img/23/2_holiday.png" width="140" height="140" alt="23 февраля лого">
+                    </div>
+                    <div class="menu__name">23 февраля</div>
+                </a>
+                <a href="#" class="menu__item">
+                    <div class="menu__img">
+                        <img src="./img/8/3_holiday.png" width="140" height="140" alt="8 марта лого">
+                    </div>
+                    <div class="menu__name">8 марта</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="d-none filter-garland">
+            <div class="container">
+                <div class="filter-garland__body">
+                    <div class="filter-garland__title">Правильно подберите гирлянду для ёлки</div>
+                    <div class="filter-garland__filter">
+                        <div class="filter-garland__img">
+                            <img src="./img/naryadite-yelku-newyear2022/block2_configurator.svg" width="660"
+                                 height="520"
+                                 alt="">
+                        </div>
+                        <div class="filter-garland__param">
+                            <div class="filter-garland__param-row">
+                                <div>
+                                    <div class="form-group">
+                                        <div class="filter-garland__param-name">Длина гирлянды</div>
+                                        <div class="form_radio">
+                                            <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                            <label for="radio-1">до 5 м</label>
+                                        </div>
+
+                                        <div class="form_radio">
+                                            <input id="radio-2" type="radio" name="radio" value="2">
+                                            <label for="radio-2">от 5 до 9 м</label>
+                                        </div>
+
+                                        <div class="form_radio">
+                                            <input id="radio-3" type="radio" name="radio" value="3">
+                                            <label for="radio-3">от 9 м</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="filter-garland__param-name">Тип свечения</div>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox" checked>
+                                            <span>Постоянное свечение</span>
+                                        </label>
+
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>Перелив</span>
+                                        </label>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>Мерцание</span>
+                                        </label>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>8 режимов</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="filter-garland__param-name">Цвет свечения</div>
+                                        <div class="filter-garland__param-color">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <div class="filter-garland__param-name">Цвет провода</div>
+                                        <div class="filter-garland__param-column">
+                                            <label class="checkbox-other">
+                                                <input type="checkbox" checked>
+                                                <span>Черный</span>
+                                            </label>
+                                            <label class="checkbox-other">
+                                                <input type="checkbox">
+                                                <span>Прозрачный</span>
+                                            </label>
+                                            <label class="checkbox-other">
+                                                <input type="checkbox">
+                                                <span>Зелёный</span>
+                                            </label>
+
+                                            <label class="checkbox-other">
+                                                <input type="checkbox">
+                                                <span>Белый</span>
+                                            </label>
+                                            <label class="checkbox-other">
+                                                <input type="checkbox">
+                                                <span>Серебряный</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="filter-garland__param-name">Вид гирлянды</div>
+                                        <div class="filter-garland__param-column">
+                                            <label class="checkbox-other">
+                                                <input type="checkbox" checked>
+                                                <span>Нить</span>
+                                            </label>
+                                            <label class="checkbox-other">
+                                                <input type="checkbox">
+                                                <span>Сетка</span>
+                                            </label>
+
+                                            <label class="checkbox-other">
+                                                <input type="checkbox">
+                                                <span>Занавес</span>
+                                            </label>
+                                            <label class="checkbox-other">
+                                                <input type="checkbox">
+                                                <span>Бахрома</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="filter-garland__param-name">Насадка</div>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox" checked>
+                                            <span>Без насадок</span>
+                                        </label>
+                                        <label class="checkbox-other">
+                                            <input type="checkbox">
+                                            <span>С насадками</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="filter-garland__btn">Подобрать гирлянду</button>
+                        </div>
+                    </div>
+                    <div class="filter-garland__slider">
+                        <div class="filter-garland__title filter-garland__title--slider">Гирлянды по выбранным
+                            параметрам <a
+                                    class="btn-view-all"
+                                    href="">Смотреть все</a></div>
+                        <div class="swiper swiper-garland">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/delete-2.png" width="270" height="433" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/delete-2.png" width="270" height="433" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/delete-2.png" width="270" height="433" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/delete-2.png" width="270" height="433" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/delete-2.png" width="270" height="433" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/delete-2.png" width="270" height="433" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/delete-2.png" width="270" height="433" alt="">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-garland-button-prev"></div>
+                        <div class="swiper-garland-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none decorations-elka">
+            <div class="container">
+                <div class="decorations-elka__title">Все украшения для праздничной ёлки <a class="btn-view-all"
+                                                                                           href="https://galamart.ru/collections/vse-ukrasheniya-dlya-prazdnichnoy-elki/"
+                                                                                           target="_blank">Смотреть
+                    все</a>
+                </div>
+                <div class="decorations-elka__body">
+                    <img class="img-fluid" src="./img/delete-1.png" width="1350" alt="">
+                </div>
+                <div class="action-banners">
+                    <div class="swiper swiper-action">
+                        <div class="swiper-wrapper">
+                            <a href="#" target="_blank" class="swiper-slide">
+                                <img src="./img/sale_banner1.jpg" width="430" height="140" alt="">
+                            </a>
+                            <a href="#" target="_blank" class="swiper-slide">
+                                <img src="./img/sale_banner2.jpg" width="430" height="140" alt="">
+                            </a>
+                            <a href="#" target="_blank" class="swiper-slide">
+                                <img src="./img/sale_banner1.jpg" width="430" height="140" alt="">
+                            </a>
+                            <a href="#" target="_blank" class="swiper-slide">
+                                <img src="./img/sale_banner2.jpg" width="430" height="140" alt="">
+                            </a>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none slider-collection-2022">
+            <div class="container">
+                <div class="slider-collection-2022__title">Коллекции украшенных ёлок <a class="btn-view-all"
+                                                                                        href="https://galamart.ru/collections/vse-novogodnie-kollektsii-2022/"
+                                                                                        target="_blank">Смотреть все</a>
+                </div>
+                <div class="slider-collection-2022__body">
+                    <div class="swiper swiper-collection-2022">
+                        <div class="swiper-wrapper">
+                            <a href="https://galamart.ru/collections/kollektsiya-elochnykh-igrushek-zolotoy-bryut/"
+                               target="_blank" class="swiper-slide">
+                                <div class="slider-collection-2022__img">
+                                    <img src="./img/naryadite-yelku-newyear2022/collection1.jpg" width="315"
+                                         height="400"
+                                         alt="">
+                                </div>
+                                <div class="slider-collection-2022__txt">
+                                    <p>«Золотой брют»</p>
+                                    <img class="slider-collection-2022__arrow" src="./img/arrow-inactive.svg" width="31"
+                                         height="31" alt="">
+                                </div>
+                            </a>
+                            <a href="https://galamart.ru/collections/kollektsiya-elochnykh-igrushek-biryuzovyy-absent/"
+                               target="_blank" class="swiper-slide">
+                                <div class="slider-collection-2022__img">
+                                    <img src="./img/naryadite-yelku-newyear2022/collection2.jpg" width="316"
+                                         height="400"
+                                         alt="">
+                                </div>
+
+                                <div class="slider-collection-2022__txt">
+                                    <p>«Бирюзовый абсент»</p>
+                                    <img class="slider-collection-2022__arrow" src="./img/arrow-inactive.svg" width="31"
+                                         height="31" alt="">
+                                </div>
+                            </a>
+                            <a href="https://galamart.ru/collections/kollektsiya-elochnykh-igrushek-pryanyy-glintveyn/"
+                               target="_blank" class="swiper-slide">
+                                <div class="slider-collection-2022__img">
+                                    <img src="./img/naryadite-yelku-newyear2022/collection3.jpg" width="315"
+                                         height="400"
+                                         alt="">
+                                </div>
+
+                                <div class="slider-collection-2022__txt">
+                                    <p>«Пряный глинтвейн»</p>
+                                    <img class="slider-collection-2022__arrow" src="./img/arrow-inactive.svg" width="31"
+                                         height="31" alt="">
+                                </div>
+                            </a>
+                            <a href="https://galamart.ru/collections/kollektsiya-elochnykh-igrushek-rozhdestvenskaya-klassika/"
+                               target="_blank" class="swiper-slide">
+                                <div class="slider-collection-2022__img">
+                                    <img src="./img/naryadite-yelku-newyear2022/collection4.jpg" width="316"
+                                         height="400"
+                                         alt="">
+                                </div>
+
+                                <div class="slider-collection-2022__txt">
+                                    <p>«Рождественская классика»</p>
+                                    <img class="slider-collection-2022__arrow" src="./img/arrow-inactive.svg" width="31"
+                                         height="31" alt="">
+                                </div>
+                            </a>
+                            <a href="https://galamart.ru/collections/kollektsiya-elochnykh-igrushek-ekostil/"
+                               target="_blank" class="swiper-slide">
+                                <div class="slider-collection-2022__img">
+                                    <img src="./img/naryadite-yelku-newyear2022/collection5.jpg" width="316"
+                                         height="400"
+                                         alt="">
+                                </div>
+
+                                <div class="slider-collection-2022__txt">
+                                    <p>«Экостиль»</p>
+                                    <img class="slider-collection-2022__arrow" src="./img/arrow-inactive.svg" width="31"
+                                         height="31" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-collection-button-prev"></div>
+                    <div class="swiper-collection-button-next"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none video">
+            <div class="container">
+                <div class="video__title">Видеоидеи, как украсить ёлку <a class="btn-view-all"
+                                                                          href="https://www.youtube.com/channel/UC6XL9XGX2ni4-QO9CjSsrog/videos"
+                                                                          target="_blank">Смотреть все</a></div>
+                <div class="video__body">
+                    <div class="swiper swiper-video">
+                        <div class="swiper-wrapper">
+                            <a href="https://www.youtube.com/watch?v=Gd32MPO-FUA" target="_blank" class="swiper-slide">
+                                <div class="video__img">
+                                    <img src="//img.youtube.com/vi/Gd32MPO-FUA/maxresdefault.jpg" alt="">
+                                </div>
+                                <p>Новогоднее оформление игрушками и гирляндами «Новогодняя сказка»</p>
+                            </a>
+                            <a href="https://youtu.be/tJ9Rf-4jheY" target="_blank" class="swiper-slide">
+                                <div class="video__img">
+                                    <img src="//img.youtube.com/vi/tJ9Rf-4jheY/maxresdefault.jpg" alt="">
+                                </div>
+                                <p>Новогоднее оформление игрушками и гирляндами « Розовая магия»</p>
+                            </a>
+                            <a href="https://youtu.be/1bRyTvM1BdU" target="_blank" class="swiper-slide">
+                                <div class="video__img">
+                                    <img src="//img.youtube.com/vi/1bRyTvM1BdU/maxresdefault.jpg" alt="">
+                                </div>
+                                <p>Новогоднее оформление игрушками и гирляндами «Рождественские огни»</p>
+                            </a>
+                            <a href="https://youtu.be/h50czR16ToE" target="_blank" class="swiper-slide">
+                                <div class="video__img">
+                                    <img src="//img.youtube.com/vi/h50czR16ToE/maxresdefault.jpg" alt="">
+                                </div>
+                                <p>Новогоднее оформление игрушками и гирляндами «Огни самоцветов»</p>
+                            </a>
+                            <a href="https://youtu.be/VV9qcfLZjjg" target="_blank" class="swiper-slide">
+                                <div class="video__img">
+                                    <img src="//img.youtube.com/vi/VV9qcfLZjjg/maxresdefault.jpg" alt="">
+                                </div>
+                                <p>Новогоднее оформление игрушками и гирляндами «Серебряная дымка»</p>
+                            </a>
+                            <a href="https://youtu.be/JwFU0npInRE" target="_blank" class="swiper-slide">
+                                <div class="video__img">
+                                    <img src="//img.youtube.com/vi/JwFU0npInRE/maxresdefault.jpg" alt="">
+                                </div>
+                                <p>Новогоднее оформление игрушками и гирляндами «Блестящая история»</p>
+                            </a>
+                            <a href="https://youtu.be/bafU2mPJa5o" target="_blank" class="swiper-slide">
+                                <div class="video__img">
+                                    <img src="//img.youtube.com/vi/bafU2mPJa5o/maxresdefault.jpg" alt="">
+                                </div>
+                                <p>Новогоднее оформление игрушками и гирляндами «Розовое настроение»</p>
+                            </a>
+                            <a href="https://youtu.be/Mk65aFApB9w" target="_blank" class="swiper-slide">
+                                <div class="video__img">
+                                    <img src="//img.youtube.com/vi/Mk65aFApB9w/maxresdefault.jpg" alt="">
+                                </div>
+                                <p>Электро-гирлянда бахрома «Огни мегаполиса»</p>
+                            </a>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none footer-nav-2022">
+            <div class="container">
+                <div class="footer-nav-2022__body">
+                    <div class="footer-nav-2022__prev">
+                        <div class="footer-nav-2022__img">
+                            <img src="./img/step4_bottom.png" width="140" height="150" alt="">
+                        </div>
+                        <a class="footer-nav-2022__name" href="#">Украсить дом <span>04</span></a>
+                    </div>
+                    <div class="footer-nav-2022__next">
+                        <a class="footer-nav-2022__name" href="#">Украсить дом <span>02</span></a>
+                        <div class="footer-nav-2022__img">
+                            <img src="./img/step2_bottom.png" width="140" height="150" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/galamart-23-8.js"></script>
+</body>
+
+</html>
