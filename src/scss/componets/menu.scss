@@ -1,5 +1,5 @@
 .menu{
-	width: 940px;
+	width: 760px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -8,11 +8,12 @@
 		display: block;
 		text-decoration: none;
 		text-align: center;
-		width: 320px;
 		background-image: url("../img/top-banner-item-bg.webp");
 		background-repeat: no-repeat;
 		background-position: bottom center;
 		position: relative;
+		margin: 0 auto;
+		height: 100%;
 		&.active{
 			&:before{
 				content: '';
@@ -27,12 +28,19 @@
 				height: 100%;
 			}
 			.menu__name{
-				font-size: 20px;
-				line-height: 26px;
 				opacity: 1;
+				position: relative;
+				border-bottom: none;
+				&:before,
+				&:after{
+					content: '•';
+					display: inline-block;
+					color: #7C8033;
+					margin: 0 4px;
+				}
 
 			}
-			img{
+			.menu__img{
 				width: 200px;
 				height: 200px;
 			}
@@ -40,14 +48,17 @@
 
 	}
 	&__img{
+		position: relative;
+		width: 140px;
+		height: 140px;
+		margin: 0 auto;
 		img{
-			width: 140px;
-			height: 140px;
-			margin: 0 auto;
+			width: 100%;
 			display: block;
 		}
 	}
 	&__name{
+		width: fit-content;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 24px;
@@ -55,6 +66,10 @@
 		text-align: center;
 		color: #333333;
 		opacity: 0.7;
-		margin-bottom: -30px;
+		margin: 0 auto ;
+		border-bottom: 1px dotted;
+	}
+	.swiper-slide{
+		align-self: flex-end;
 	}
 }

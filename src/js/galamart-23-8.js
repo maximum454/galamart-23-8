@@ -20,6 +20,27 @@ $(function () {
     });
 })
 
+const swiperMenu = new Swiper('.swiper-container-menu', {
+    slidesPerView: 'auto',
+    spaceBetween:0,
+    loop:false,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    observer: true,
+    freeMode: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.5,
+        },
+        768: {
+            slidesPerView: 2,
+        }
+    }
+
+
+});
+
 const swiperCollection2022 = new Swiper('.swiper-collection-2022', {
     slidesPerView: 1,
     spaceBetween: 20,
