@@ -79,7 +79,7 @@
 	}
 	@include r(767){
 		&__body{
-			grid-template-columns: 1f;
+			grid-template-columns: 1fr;
 		}
 	}
 }

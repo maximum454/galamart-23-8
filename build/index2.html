@@ -42,187 +42,277 @@
 </head>
 
 <body>
-<div class="wrp">
-    <div class="header-banner">
-        <div class="header-banner__logo">
-            <img src="./img/text_main_banner.svg" width="614" height="382" alt="">
-        </div>
-        <a href="" class="header-banner__btn">
-            <img src="./img/btn_main_banner-min.png" width="440" height="186" alt="">
-        </a>
-    </div>
+<div class="container">
+    <div class="wrp">
+        <div class="header-banner header-banner--23">
+            <div class="header-banner__logo">
+                <img src="./img/23/balloons.png" width="338" height="326" alt="23 февраля логотип">
+            </div>
+            <h1 class="header-banner__title">Выбирайте подарки</h1>
+            <h2 class="header-banner__subtitle">для настоящих мужчин</h2>
+            <div class="header-banner__menu menu swiper-container-menu">
 
-    <div class="tabs">
-        <div class="container">
-            <ul class="tabs__caption">
-                <li class="">
-                    <div class="tabs__item">
-                        <a class="tabs__name" href="./index.html">Нарядить ёлку <span>01</span></a>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="menu__item active">
+                            <div class="menu__img">
+                                <img src="./img/23/2_holiday.png" width="140" height="140" alt="23 февраля лого">
+                            </div>
+                            <div class="menu__name">23 февраля</div>
+                        </a>
                     </div>
-                    <a href="./index.html" class="tabs__icon">
-                        <img src="./img/step1_inactive.png"  alt="">
+                    <div class="swiper-slide">
+                        <a href="#" class="menu__item">
+                            <div class="menu__img">
+                                <img src="./img/8/3_holiday.png" width="140" height="140" alt="8 марта лого">
+                            </div>
+                            <div class="menu__name">8 марта</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-populary">
+            <div class="container">
+                <div class="slider-populary__header">
+                    <div class="slider-populary__title"><span>Популярные подарки</span> для мужчин</div>
+                    <a href="" target="_blank" class="slider-populary__link">Смотреть все</a>
+                </div>
+                <div class="slider-populary__body">
+                    <div class="swiper swiper-populary">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="select-gifts">
+            <div class="container">
+                <div class="select-gifts__header">
+                    <div class="select-gifts__title"><span>Кому</span> выбираете подарок?</div>
+                </div>
+                <div class="select-gifts__body">
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/who1.png" width="315" height="240" alt=""></div>
+                        <div class="select-gifts__name">Любимому мужчине</div>
                     </a>
-                </li>
-                <li>
-                    <div class="tabs__item">
-                        <a class="tabs__name" href="./vyberite-podarki.html">Выбрать подарки <span>02</span></a>
-                    </div>
-                    <a href="./vyberite-podarki.html" class="tabs__icon">
-                        <img src="./img/step2_inactive.png" alt="">
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/who2.png" width="315" height="240" alt=""></div>
+                        <div class="select-gifts__name">Маленькому супергерою</div>
                     </a>
-                </li>
-                <li class="active">
-                    <div class="tabs__item">
-                        <a class="tabs__arrow-prev" href="./vyberite-podarki.html"></a>
-                        <div class="tabs__name">Накрыть на стол <span>03</span></div>
-                        <a class="tabs__arrow-next" href="./ukraste-dom.html"></a>
-                    </div>
-                    <div class="tabs__icon icon1">
-                        <img src="./img/step3_active.png" alt="">
-                    </div>
-                </li>
-                <li>
-                    <div class="tabs__item">
-                        <a class="tabs__name" href="./ukraste-dom.html">Украсить дом <span>04</span></a>
-                    </div>
-                    <a href="./ukraste-dom.html" class="tabs__icon icon1">
-                        <img src="./img/step4_inactive.png" alt="">
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/who3.png" width="315" height="240" alt=""></div>
+                        <div class="select-gifts__name">Коллегам и друзьям</div>
                     </a>
-                </li>
-            </ul>
-            <!-- Контент -->
-            <div class="tabs__content active">
-                <div class="tabs__title">Всё для сервировки праздничного стола <a class="btn-view-all"
-                                                                  href="https://galamart.ru/collections/novogodnie-yelki/"
-                                                                  target="_blank">Смотреть все</a></div>
-                <img class="img-fluid" src="./img/delete-5.png" width="986" height="38" alt="">
-                <img class="img-fluid" src="./img/delete-4.png" width="1350" height="865" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="decorations-elka">
-        <div class="container">
-            <div class="decorations-elka__title">Для приготовления и праздничной атмосферы на кухне <a class="btn-view-all"
-                                                                              href="https://galamart.ru/collections/vse-dlya-prigotovleniya-blyud-i-prazdnichnoy-atmosfery-na-kukhne-k-novomu-2022-godu/"
-                                                                              target="_blank">Смотреть все</a>
-            </div>
-            <div class="decorations-elka__body">
-                <img class="img-fluid" src="./img/delete-1.png" width="1350" alt="">
-            </div>
-            <div class="action-banners">
-                <div class="swiper swiper-action">
-                    <div class="swiper-wrapper">
-                        <a href="#" target="_blank" class="swiper-slide">
-                            <img src="./img/sale_banner1.jpg" width="430" height="140" alt="">
-                        </a>
-                        <a href="#" target="_blank" class="swiper-slide">
-                            <img src="./img/sale_banner2.jpg" width="430" height="140" alt="">
-                        </a>
-                        <a href="#" target="_blank" class="swiper-slide">
-                            <img src="./img/sale_banner1.jpg" width="430" height="140" alt="">
-                        </a>
-                        <a href="#" target="_blank" class="swiper-slide">
-                            <img src="./img/sale_banner2.jpg" width="430" height="140" alt="">
-                        </a>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/who4.png" width="315" height="240" alt=""></div>
+                        <div class="select-gifts__name">Папе и дедушке</div>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="slider-collection-2022">
-        <div class="container">
-            <div class="slider-collection-2022__title">Новогодние коллекции посуды и кухонного текстиля <a class="btn-view-all"
-                                                                            href="https://galamart.ru/collections/new_year_2021/"
-                                                                            target="_blank">Смотреть все</a></div>
-            <div class="slider-collection-2022__body">
-                <div class="swiper swiper-collection-2022">
-                    <div class="swiper-wrapper">
-                        <a href="https://galamart.ru/collections/shotlandka/"
-                           target="_blank" class="swiper-slide">
-                            <div class="slider-collection-2022__img">
-                                <img src="./img/nakroyte-prazdnichnyy-stol-newyear2022/collection1.jpg" width="315" height="400"
-                                     alt="">
-                            </div>
-                            <div class="slider-collection-2022__txt">
-                                <p>«Шотландка»</p>
-                            </div>
-                        </a>
-                        <a href="https://galamart.ru/collections/snegir/"
-                           target="_blank" class="swiper-slide">
-                            <div class="slider-collection-2022__img">
-                                <img src="./img/nakroyte-prazdnichnyy-stol-newyear2022/collection2.jpg" width="315" height="400"
-                                     alt="">
-                            </div>
-                            <div class="slider-collection-2022__txt">
-                                <p>«Снегирь»</p>
-                            </div>
-                        </a>
-                        <a href="https://galamart.ru/collections/pryanichnyy-domik/"
-                           target="_blank" class="swiper-slide">
-                            <div class="slider-collection-2022__img">
-                                <img src="./img/nakroyte-prazdnichnyy-stol-newyear2022/collection3.jpg" width="315" height="400"
-                                     alt="">
-                            </div>
-                            <div class="slider-collection-2022__txt">
-                                <p>«Хвойное утро»</p>
-                            </div>
-                        </a>
-                        <a href="https://galamart.ru/collections/khvoynoe-utro/"
-                           target="_blank" class="swiper-slide">
-                            <div class="slider-collection-2022__img">
-                                <img src="./img/nakroyte-prazdnichnyy-stol-newyear2022/collection4.jpg" width="315" height="400"
-                                     alt="">
-                            </div>
-                            <div class="slider-collection-2022__txt">
-                                <p>«Пряничный домик»</p>
-                            </div>
-                        </a>
-                        <a href="https://galamart.ru/collections/gold-fantasy/"
-                           target="_blank" class="swiper-slide">
-                            <div class="slider-collection-2022__img">
-                                <img src="./img/nakroyte-prazdnichnyy-stol-newyear2022/collection5.jpg" width="315" height="400"
-                                     alt="">
-                            </div>
-                            <div class="slider-collection-2022__txt">
-                                <p>Gold Fantasy</p>
-                            </div>
-                        </a>
-
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+        <div class="all-gifts">
+            <div class="container">
+                <div class="all-gifts__header">
+                    <div class="all-gifts__title"><span>Все подарки</span> к 23 февраля</div>
+                    <a class="all-gifts__link" href="">Смотреть все</a>
                 </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-collection-button-prev"></div>
-                <div class="swiper-collection-button-next"></div>
+                <div class="all-gifts__body">
+                    <img class="img-fluid" src="./img/delet2.png" width="1350" height="1515" alt="">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-nav-2022">
-        <div class="container">
-            <div class="footer-nav-2022__body">
-                <div class="footer-nav-2022__prev">
-                    <div class="footer-nav-2022__img">
-                        <img src="./img/step2_bottom.png" width="140" height="150" alt="">
-                    </div>
-                    <a class="footer-nav-2022__name" href="#">Выбрать подарки<span>02</span></a>
+        <div class="select-gifts">
+            <div class="container">
+                <div class="select-gifts__header">
+                    <div class="select-gifts__title"><span>Лучшие подарки — </span>это</div>
                 </div>
-                <div class="footer-nav-2022__next">
-                    <a class="footer-nav-2022__name" href="#">Украсить дом <span>04</span></a>
-                    <div class="footer-nav-2022__img">
-                        <img src="./img/step4_bottom.png" width="140" height="150" alt="">
-                    </div>
+                <div class="select-gifts__body">
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg1.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Наборы джентльмена</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg2.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Инструменты</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg3.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Гаджеты</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg4.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Термосы</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg5.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Для бритья и стрижки</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg6.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Носки, трусы, футболки</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg7.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Для горячительного</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg8.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Игрушки для мальчишек</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg9.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Настольные игры</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg10.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Спорттовары</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg11.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Для туризма и рыбалки</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg12.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Кожгалантерея</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg13.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Для бани</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg14.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Автотовары</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg15.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Часы</div>
+                    </a>
+                    <a href="#" class="select-gifts__item">
+                        <div><img class="img-fluid" src="./img/23/ctg16.png" width="235" height="191" alt=""></div>
+                        <div class="select-gifts__name">Акции</div>
+                    </a>
 
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="slider-populary">
+            <div class="container">
+                <div class="slider-populary__header">
+                    <div class="slider-populary__title">Красиво <span>упакуйте подарок</span></div>
+                    <a href="" target="_blank" class="slider-populary__link">Смотреть все</a>
+                </div>
+                <div class="slider-populary__body">
+                    <div class="swiper swiper-populary">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/delet.png" width="270" height="433" alt="">
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="container">
+                <div class="article__header">
+                    <div class="article__title">Как провести <span>23 февраля?</span></div>
+                </div>
+                <div class="article__body">
+
+                    <a href="#" target="_blank" class="article__item">
+                        <img src="./img/23/idea1.jpg" width="430" height="300" alt="">
+                        <div class="article__txt">
+                            <div class="article__name">Проведите время на природе.</div>
+                            <div class="article__anons">Съездите на рыбалку, постреляйте по мишеням или отправьтесь с друзьями в поход.</div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="article__item">
+                        <img src="./img/23/idea2.jpg" width="430" height="300" alt="">
+                        <div class="article__txt">
+                            <div class="article__name">Проведите время на природе.</div>
+                            <div class="article__anons">Съездите на рыбалку, постреляйте по мишеням или отправьтесь с друзьями в поход.</div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="article__item">
+                        <img src="./img/23/idea3.jpg" width="430" height="300" alt="">
+                        <div class="article__txt">
+                            <div class="article__name">Проведите время на природе.</div>
+                            <div class="article__anons">Съездите на рыбалку, постреляйте по мишеням или отправьтесь с друзьями в поход.</div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <div class="container">
+                <div class="footer-nav__body">
+                    <a href="#" class="footer-nav__item">
+                        <div class="footer-nav__img">
+                            <img src="./img/8/3_holiday.png" width="140" height="140" alt="8 марта лого">
+                        </div>
+                        <div class="footer-nav__txt">
+                            <div class="footer-nav__text">Выбрать подарок на</div>
+                            <div class="footer-nav__name">Международный женский день</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

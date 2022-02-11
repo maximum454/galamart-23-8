@@ -35,7 +35,7 @@
 	}
 	&__body{
 		display: grid;
-		grid-template-columns: repeat(auto-fit,minmax(327px, 1fr));
+		grid-template-columns: repeat(auto-fit,minmax(265px, 1fr));
 	}
 	&__item{
 		text-decoration: none;
@@ -57,5 +57,15 @@
 		text-decoration-line: underline;
 		text-decoration-skip-ink: none;
 		color: #FFFFFF;
+	}
+	@include r(767){
+		&__title {
+			font-size: 28px;
+			line-height: 26px;
+			span,a{
+				display: block;
+
+			}
+		}
 	}
 }
