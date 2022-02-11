@@ -1,12 +1,4 @@
-
-
 $(function () {
-    //Показать еще
-    $('.js-best-gift-more').on('click', function (){
-        $(this).addClass('d-none');
-        $('.best-gift__body').removeClass('d-none');
-    })
-
     $('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
 
     $('a[href^="#"]').on('click', function(event) {
@@ -57,43 +49,6 @@ const swiperPopulary = new Swiper('.swiper-populary', {
         },
         768: {
             slidesPerView: 5,
-        }
-    }
-});
-
-const swiperAction = new Swiper('.swiper-action', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 3,
-        }
-    }
-});
-
-const swiperVideo = new Swiper('.swiper-video', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
         }
     }
 });

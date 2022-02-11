@@ -908,7 +908,7 @@ p {
 }
 
 .slider-populary {
-  margin-bottom: 60px;
+  margin: 50px 0;
   position: relative;
 }
 
@@ -1143,7 +1143,7 @@ p {
 }
 
 .article {
-  padding: 40px 0;
+  margin: 40px 0;
 }
 
 .article__header {
