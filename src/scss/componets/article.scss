@@ -1,0 +1,85 @@
+.article {
+	padding: 40px 0;
+	&__header{
+		margin-bottom: 30px;
+		position: relative;
+		padding-bottom: 40px;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-image: url("../img/23/h1_back.svg");
+			background-position: center;
+			width: 100%;
+			height: 42px;
+		}
+	}
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 52px;
+		text-align: center;
+		margin-bottom: 20px;
+		color: #333;
+		span,a{
+			color: #7C7F33;
+			text-decoration: none;
+
+		}
+	}
+	&__body{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;
+	}
+	&__item{
+		position: relative;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+	&__img{}
+	&__txt{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 16px 21px;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .7) 100%);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		img{
+			display: block;
+			margin: 0 auto;
+			object-fit: cover;
+		}
+	}
+	&__name{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 26px;
+		text-decoration-line: underline;
+		color: #FFFFFF;
+		margin-bottom: 10px;
+		position: relative;
+		z-index: 1;
+	}
+	&__anons{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: #FFFFFF;
+		position: relative;
+		z-index: 1;
+	}
+	@include r(767){
+		&__body{
+			grid-template-columns: 1f;
+		}
+	}
+}

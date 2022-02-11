@@ -1142,128 +1142,105 @@ p {
   color: #FFFFFF;
 }
 
-.video {
-  margin-bottom: 60px;
+.article {
+  padding: 40px 0;
 }
 
-.video__title {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 47px;
-  text-align: center;
-  color: #FFFFFF;
+.article__header {
+  margin-bottom: 30px;
   position: relative;
-  margin-bottom: 15px;
+  padding-bottom: 40px;
 }
 
-.video__title a {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-}
-
-.video__img {
-  position: relative;
-}
-
-.video__img:before {
+.article__header:after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-image: url("../img/naryadite-yelku-newyear2022/play_icon.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 80px;
-  height: 80px;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/23/h1_back.svg");
+  background-position: center;
+  width: 100%;
+  height: 42px;
 }
 
-.video__body {
-  position: relative;
+.article__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.video .swiper-wrapper {
-  padding: 15px 0;
-}
-
-.video .swiper-slide {
-  background-color: #fff;
-  padding: 10px;
+.article__title span,
+.article__title a {
+  color: #7C7F33;
   text-decoration: none;
 }
 
-.video .swiper-slide:nth-child(odd) {
-  -webkit-transform: rotate(1deg);
-      -ms-transform: rotate(1deg);
-          transform: rotate(1deg);
+.article__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
 }
 
-.video .swiper-slide:nth-child(even) {
-  -webkit-transform: rotate(-1deg);
-      -ms-transform: rotate(-1deg);
-          transform: rotate(-1deg);
+.article__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
-.video .swiper-slide img {
-  max-width: 100%;
-  height: auto;
+.article__txt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px 21px;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.article__txt img {
+  display: block;
+  margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.video .swiper-slide p {
-  font-size: 18px;
-  line-height: 23px;
-  color: #000;
-}
-
-.video .swiper-button-prev,
-.video .swiper-button-next {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.video .swiper-button-disabled {
-  opacity: .5;
-}
-
-.video .swiper-button-prev {
-  left: -25px;
-  background-image: url("../img/bottom_block_arrow_left_inactive.svg");
-}
-
-.video .swiper-button-next {
-  right: -25px;
-  background-image: url("../img/bottom_block_arrow_right_inactive.svg");
-}
-
-.video .swiper-pagination {
+.article__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #FFFFFF;
+  margin-bottom: 10px;
   position: relative;
-  bottom: 0;
-  margin: 20px auto;
+  z-index: 1;
 }
 
-.video .swiper-pagination {
+.article__anons {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
   position: relative;
-  bottom: 0;
-  display: none;
+  z-index: 1;
 }
 
 .footer-nav {
@@ -1644,13 +1621,8 @@ p {
     display: none;
   }
 
-  .video__title {
-    font-size: 24px;
-    line-height: 31px;
-  }
-
-  .video__title a {
-    display: none;
+  .article__body {
+    grid-template-columns: 1f;
   }
 
   .best-gift__title {

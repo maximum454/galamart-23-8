@@ -1,0 +1,69 @@
+.decorations-elka{
+	background-color: #fff;
+	padding: 50px 0;
+	margin: 75px 0 115px;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: -50px;
+		left: 0;
+		background-image: url("../img/content_block_snowborder_top.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 115px;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		background-image: url("../img/content_block_snowborder_bottom.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 115px;
+		z-index: 10;
+	}
+	&__title {
+		font-family: PT Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 47px;
+		text-align: center;
+		color: #2960A5;
+		position: relative;
+		margin-bottom: 20px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: -115px;
+			left: 80%;
+			transform: translate(-50%,0);
+			background-image: url("../img/naryadite-yelku-newyear2022/star_element.svg");
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 115px;
+			height: 114px;
+		}
+		a {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+	@include r(767){
+		&__title {
+			font-size: 24px;
+			line-height: 31px;
+			a {
+				display: none;
+			}
+		}
+	}
+}
