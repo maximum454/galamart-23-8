@@ -937,6 +937,7 @@ p {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
+  padding: 0 140px;
 }
 
 .slider-populary__title span,
@@ -1511,6 +1512,7 @@ p {
   .slider-populary__title {
     font-size: 28px;
     line-height: 36px;
+    padding: 0;
   }
 
   .slider-populary__title span {
