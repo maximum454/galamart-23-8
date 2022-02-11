@@ -41,22 +41,22 @@ const swiperMenu = new Swiper('.swiper-container-menu', {
 
 });
 
-const swiperCollection2022 = new Swiper('.swiper-collection-2022', {
-    slidesPerView: 1,
-    spaceBetween: 20,
+const swiperPopulary = new Swiper('.swiper-populary', {
+    slidesPerView: 5,
+    spaceBetween: 0,
     pagination: {
         el: '.swiper-pagination',
     },
     navigation: {
-        nextEl: '.swiper-collection-button-next',
-        prevEl: '.swiper-collection-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     breakpoints: {
         320: {
             slidesPerView: 2,
         },
         768: {
-            slidesPerView: 4,
+            slidesPerView: 5,
         }
     }
 });
@@ -74,29 +74,6 @@ const swiperAction = new Swiper('.swiper-action', {
         768: {
             slidesPerView: 3,
         }
-    }
-});
-
-const swiperGarland = new Swiper('.swiper-garland', {
-    slidesPerView: 2,
-    spaceBetween: 0,
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    navigation: {
-        nextEl: '.swiper-garland-button-next',
-        prevEl: '.swiper-garland-button-prev',
-    },
-    breakpoints: {
-        320:{
-            slidesPerView: 2,
-        },
-        768: {
-            slidesPerView: 4,
-        },
-        1024: {
-            slidesPerView: 5,
-        },
     }
 });
 

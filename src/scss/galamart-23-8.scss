@@ -9,7 +9,6 @@
 
 body {
 	background-color: #fff !important;
-
 	&.lock {
 		overflow: hidden;
 	}
@@ -160,10 +159,10 @@ p {
 
 @import "componets/header-banner";
 @import "componets/menu";
-@import "componets/decorations-elka";
-@import "componets/filter-garland";
+@import "componets/slider-populary";
+@import "componets/select-gifts";
 @import "componets/action-banners";
-@import "componets/slider-collection";
+
 @import "componets/video";
 @import "componets/footer-nav";
 @import "componets/best-gift";
