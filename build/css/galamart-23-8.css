@@ -415,8 +415,16 @@ p {
   border: 1px solid #FAE6ED;
 }
 
+.slider-populary--8 .swiper-button-prev {
+  background-image: url("../img/8/arrow_left.svg") !important;
+}
+
+.slider-populary--8 .swiper-button-next {
+  background-image: url("../img/8/arrow_right.svg") !important;
+}
+
 .slider-populary--8 .swiper-pagination-bullet {
-  background-color: #E5457B;
+  background-color: #E5457B !important;
 }
 
 .slider-populary__header {

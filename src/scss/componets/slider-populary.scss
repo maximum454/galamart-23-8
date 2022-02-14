@@ -25,8 +25,14 @@
 			border: 1px solid #FAE6ED;
 
 		}
+		.swiper-button-prev{
+			background-image: url("../img/8/arrow_left.svg") !important;
+		}
+		.swiper-button-next{
+			background-image: url("../img/8/arrow_right.svg") !important;
+		}
 		.swiper-pagination-bullet{
-			background-color: #E5457B;
+			background-color: #E5457B!important;
 		}
 	}
 	&__header{
