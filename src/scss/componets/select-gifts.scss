@@ -23,6 +23,16 @@
 
 			}
 		}
+		.select-gifts__item{
+			&:last-of-type{
+				background-image: url("../img/8/select-gifts-item.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				.select-gifts__name{
+					color: #fff;
+				}
+			}
+		}
 		.select-gifts__name{
 			color: #E5457B;
 		}
