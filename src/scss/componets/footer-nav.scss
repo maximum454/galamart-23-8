@@ -25,4 +25,22 @@
 		color: #333;
 		border-bottom: 1px dotted #555;
 	}
+	@include r(767){
+		&__img{
+			width: 120px;
+			margin-right: 10px;
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&__name{
+			font-size: 18px;
+			line-height: 21px;
+			display: inline;
+		}
+		&__text{
+			font-size: 14px;
+		}
+	}
 }

@@ -46,9 +46,27 @@ const swiperPopulary = new Swiper('.swiper-populary', {
     breakpoints: {
         320: {
             slidesPerView: 2,
+
         },
         768: {
             slidesPerView: 5,
+        }
+    }
+});
+
+const swiperArticle = new Swiper('.swiper-container-article', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1023: {
+            slidesPerView: 3,
         }
     }
 });

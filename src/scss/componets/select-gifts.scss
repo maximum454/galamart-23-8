@@ -15,6 +15,8 @@
 			left: 0;
 			background-image: url("../img/23/h1_back.svg");
 			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 			width: 100%;
 			height: 42px;
 		}
@@ -58,7 +60,60 @@
 		text-decoration-skip-ink: none;
 		color: #FFFFFF;
 	}
+	&__btn{
+		font-size: 14px;
+		line-height: 18px;
+		text-align: center;
+		color: #555;
+		opacity: 0.7;
+		z-index: 1;
+		padding: 10px 25px;
+		text-decoration: none;
+		background-color: #E5E5CF;
+		border: 1px solid #E5E5CF;
+		border-radius: 4px;
+		width: fit-content;
+		margin: 36px auto 0;
+		display: none;
+		&:hover{
+			background-color: #fff;
+		}
+		img{
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+	}
 	@include r(767){
+		&__header{
+			&:after{
+				height: 30px;
+			}
+		}
+		&--who{
+			.select-gifts__name{
+				font-size: 18px;
+				line-height: 23px;
+				color: #7C8033;
+			}
+		}
+		&--best{
+			.select-gifts__title {
+				font-size: 28px;
+				line-height: 26px;
+				span,a{
+					display: inline;
+				}
+			}
+			.select-gifts__name{
+				font-size: 13px;
+				line-height: 17px;
+			}
+			.select-gifts__body{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+
 		&__title {
 			font-size: 28px;
 			line-height: 26px;
@@ -66,6 +121,9 @@
 				display: block;
 
 			}
+		}
+		&__btn{
+			display: block;
 		}
 	}
 }
