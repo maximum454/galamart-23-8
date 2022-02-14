@@ -614,6 +614,32 @@ p {
   padding: 47px 0;
 }
 
+.select-gifts--8 {
+  background-image: url("../img/8/back2.jpg");
+}
+
+.select-gifts--8 .select-gifts__header:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/8/h1_back.svg");
+}
+
+.select-gifts--8 .select-gifts__title {
+  color: #333;
+}
+
+.select-gifts--8 .select-gifts__title span,
+.select-gifts--8 .select-gifts__title a {
+  color: #E6457B;
+  text-decoration: none;
+}
+
+.select-gifts--8 .select-gifts__name {
+  color: #E5457B;
+}
+
 .select-gifts__header {
   margin-bottom: 30px;
   position: relative;
@@ -628,7 +654,6 @@ p {
   background-image: url("../img/23/h1_back.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 42px;
 }

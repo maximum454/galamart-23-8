@@ -4,6 +4,29 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 47px 0;
+	&--8{
+		background-image: url("../img/8/back2.jpg");
+		.select-gifts__header{
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background-image: url("../img/8/h1_back.svg");
+			}
+		}
+		.select-gifts__title {
+			color: #333;
+			span,a{
+				color: #E6457B;
+				text-decoration: none;
+
+			}
+		}
+		.select-gifts__name{
+			color: #E5457B;
+		}
+	}
 	&__header{
 		margin-bottom: 30px;
 		position: relative;
@@ -16,7 +39,6 @@
 			background-image: url("../img/23/h1_back.svg");
 			background-position: center;
 			background-repeat: no-repeat;
-			background-size: cover;
 			width: 100%;
 			height: 42px;
 		}
