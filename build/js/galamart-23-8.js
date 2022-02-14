@@ -13,17 +13,17 @@ $(function () {
 })
 
 const swiperMenu = new Swiper('.swiper-container-menu', {
-    slidesPerView: 'auto',
+    slidesPerView: 2,
     spaceBetween:0,
     loop:false,
     watchOverflow: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     observer: true,
-    freeMode: true,
     breakpoints: {
         320: {
             slidesPerView: 1.5,
+
         },
         768: {
             slidesPerView: 2,
