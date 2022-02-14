@@ -620,6 +620,16 @@ p {
   background-image: url("../img/8/back2.jpg");
 }
 
+.select-gifts--8.select-gifts--best .select-gifts__item:last-of-type {
+  background-image: url("../img/8/select-gifts-item.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.select-gifts--8.select-gifts--best .select-gifts__item:last-of-type .select-gifts__name {
+  color: #fff;
+}
+
 .select-gifts--8 .select-gifts__header:after {
   content: '';
   position: absolute;
@@ -636,16 +646,6 @@ p {
 .select-gifts--8 .select-gifts__title a {
   color: #E6457B;
   text-decoration: none;
-}
-
-.select-gifts--8 .select-gifts__item:last-of-type {
-  background-image: url("../img/8/select-gifts-item.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.select-gifts--8 .select-gifts__item:last-of-type .select-gifts__name {
-  color: #fff;
 }
 
 .select-gifts--8 .select-gifts__name {

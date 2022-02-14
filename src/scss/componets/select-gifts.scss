@@ -5,6 +5,18 @@
 	background-size: cover;
 	padding: 47px 0;
 	&--8{
+		&.select-gifts--best{
+			.select-gifts__item{
+				&:last-of-type{
+					background-image: url("../img/8/select-gifts-item.jpg");
+					background-size: cover;
+					background-repeat: no-repeat;
+					.select-gifts__name{
+						color: #fff;
+					}
+				}
+			}
+		}
 		background-image: url("../img/8/back2.jpg");
 		.select-gifts__header{
 			&:after{
@@ -23,16 +35,7 @@
 
 			}
 		}
-		.select-gifts__item{
-			&:last-of-type{
-				background-image: url("../img/8/select-gifts-item.jpg");
-				background-size: cover;
-				background-repeat: no-repeat;
-				.select-gifts__name{
-					color: #fff;
-				}
-			}
-		}
+
 		.select-gifts__name{
 			color: #E5457B;
 		}
