@@ -71,7 +71,16 @@ const swiperArticle = new Swiper('.swiper-container-article', {
         1023: {
             slidesPerView: 3,
         }
-    }
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
 });
+
+const show = document.getElementById('show');
+show.addEventListener('click', function (){
+    let giftsbody = document.querySelector('.select-gifts--best .select-gifts__body');
+    giftsbody.classList.add('show');
+})
 
 

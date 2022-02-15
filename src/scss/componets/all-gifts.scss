@@ -75,11 +75,25 @@
 		}
 
 	}
+	.catalog-toolbar{
+		&__left{
+			flex-wrap: wrap;
+			.catalog-price{
+				margin-top: 20px;
+			}
+		}
+		&__right{
+			flex-grow: 2;
+		}
+		&__dd-toggle{
+			margin: 2px auto;
+		}
+	}
 	@include r(767){
+		margin: 30px 0;
 		&__header{
-
 			&:after{
-
+				background-size: cover;
 				height: 30px;
 			}
 		}

@@ -18,6 +18,7 @@
 			}
 		}
 		background-image: url("../img/8/back2.jpg");
+		background-size: cover;
 		.select-gifts__header{
 			&:after{
 				content: '';
@@ -35,9 +36,12 @@
 
 			}
 		}
-
 		.select-gifts__name{
 			color: #E5457B;
+		}
+		.select-gifts__btn{
+			background-color: #FAE6ED!important;
+			border: 1px solid #FAE6ED!important;
 		}
 	}
 	&__header{
@@ -119,9 +123,11 @@
 		}
 	}
 	@include r(767){
+		padding: 30px 0;
 		&__header{
 			&:after{
 				height: 30px;
+				background-size: cover;
 			}
 		}
 		&--who{
@@ -148,7 +154,22 @@
 				grid-template-columns: 1fr 1fr;
 			}
 		}
+		&__body{
+			&.show{
+				.select-gifts__item{
+					&:nth-child(n+9){
+						display: block;
+					}
+				}
+			}
+		}
+		&__item{
+			padding: 10px;
 
+			&:nth-child(n+9){
+				display: none;
+			}
+		}
 		&__title {
 			font-size: 28px;
 			line-height: 26px;

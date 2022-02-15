@@ -1,5 +1,7 @@
-.footer-nav{
+.footer-nav-23-8{
 	padding: 40px 0;
+	column-count: auto;
+	column-gap:0;
 	&__body{
 		display: flex;
 		align-items: center;
@@ -26,6 +28,7 @@
 		border-bottom: 1px dotted #555;
 	}
 	@include r(767){
+		padding: 0 0 40px;
 		&__img{
 			width: 120px;
 			margin-right: 10px;

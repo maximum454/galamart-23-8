@@ -1,6 +1,7 @@
 .slider-populary{
 	margin: 50px 0;
 	position: relative;
+	overflow: hidden;
 	&--8{
 		.slider-populary__header{
 			&:after{
@@ -113,7 +114,7 @@
 		right: 0;
 	}
 	&__body{
-
+		position: relative;
 	}
 	.swiper-populary{
 	}
@@ -170,7 +171,7 @@
 		background-size: contain;
 		width: 30px;
 		height: 30px;
-		left: -5px;
+		left: -20px;
 	}
 	.swiper-button-next{
 		background-image: url("../img/23/arrow_right.svg");
@@ -179,7 +180,7 @@
 		background-size: contain;
 		width: 30px;
 		height: 30px;
-		right: -5px;
+		right: -20px;
 	}
 
 	.swiper-button-next:after{
@@ -205,9 +206,11 @@
 		opacity: 1;
 	}
 	@include r(767)	{
+		margin: 30px 0;
 		&__header{
 			&:after{
 				height: 30px;
+				background-size: cover;
 			}
 		}
 		&__title {

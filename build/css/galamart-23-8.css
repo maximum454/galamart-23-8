@@ -35,35 +35,9 @@ body.lock {
   display: none;
 }
 
-.footer {
-  position: relative;
-  padding-top: 100px;
-}
-
-.footer:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../img/footer_background.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  width: 100%;
-  height: 177px;
-}
-
-.footer .footer-top {
-  padding: 57px 0 10px;
-}
-
 .main {
   background-color: #fff;
   font-family: 'PT Sans', sans-serif;
-  background-image: url(../img/background_repeat.jpg);
-  background-position: top center;
-  background-repeat: repeat;
-  background-size: contain;
   overflow: hidden;
   margin-top: 10px;
 }
@@ -215,7 +189,7 @@ p {
 .header-banner--8:before {
   content: '';
   position: absolute;
-  top: -10px;
+  top: -38px;
   left: 0;
   background-image: url("../img/8/1screen_flower.png");
   width: 312px;
@@ -395,6 +369,7 @@ p {
 .slider-populary {
   margin: 50px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .slider-populary--8 .slider-populary__header:after {
@@ -512,6 +487,10 @@ p {
   right: 0;
 }
 
+.slider-populary__body {
+  position: relative;
+}
+
 .slider-populary .swiper-wrapper {
   padding: 15px 0;
 }
@@ -569,7 +548,7 @@ p {
   background-size: contain;
   width: 30px;
   height: 30px;
-  left: -5px;
+  left: -20px;
 }
 
 .slider-populary .swiper-button-next {
@@ -579,7 +558,7 @@ p {
   background-size: contain;
   width: 30px;
   height: 30px;
-  right: -5px;
+  right: -20px;
 }
 
 .slider-populary .swiper-button-next:after {
@@ -618,6 +597,7 @@ p {
 
 .select-gifts--8 {
   background-image: url("../img/8/back2.jpg");
+  background-size: cover;
 }
 
 .select-gifts--8.select-gifts--best .select-gifts__item:last-of-type {
@@ -650,6 +630,11 @@ p {
 
 .select-gifts--8 .select-gifts__name {
   color: #E5457B;
+}
+
+.select-gifts--8 .select-gifts__btn {
+  background-color: #FAE6ED !important;
+  border: 1px solid #FAE6ED !important;
 }
 
 .select-gifts__header {
@@ -750,7 +735,29 @@ p {
 
 .article {
   margin: 40px 0;
+  padding: 20px 0 60px;
   overflow: hidden;
+  position: relative;
+}
+
+.article:after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-image: url("../img/23/ideas_back.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1920px;
+  height: 480px;
+}
+
+.article--8:after {
+  display: none;
 }
 
 .article--8 .article__header:after {
@@ -869,11 +876,35 @@ p {
   z-index: 1;
 }
 
-.footer-nav {
-  padding: 40px 0;
+.article .swiper-pagination {
+  position: relative;
+  bottom: 0;
+  margin: 20px auto;
 }
 
-.footer-nav__body {
+.article .swiper-pagination-bullet {
+  background-color: #7C7F33;
+  vertical-align: middle;
+  opacity: .4;
+}
+
+.article .swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+.footer-nav-23-8 {
+  padding: 40px 0;
+  -webkit-column-count: auto;
+     -moz-column-count: auto;
+          column-count: auto;
+  -webkit-column-gap: 0;
+     -moz-column-gap: 0;
+          column-gap: 0;
+}
+
+.footer-nav-23-8__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -885,7 +916,7 @@ p {
           justify-content: center;
 }
 
-.footer-nav__item {
+.footer-nav-23-8__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,15 +927,15 @@ p {
   color: #555;
 }
 
-.footer-nav__item:hover {
+.footer-nav-23-8__item:hover {
   opacity: .5;
 }
 
-.footer-nav__text {
+.footer-nav-23-8__text {
   font-size: 16px;
 }
 
-.footer-nav__name {
+.footer-nav-23-8__name {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -992,6 +1023,25 @@ p {
   background-color: #fff;
 }
 
+.all-gifts .catalog-toolbar__left {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all-gifts .catalog-toolbar__left .catalog-price {
+  margin-top: 20px;
+}
+
+.all-gifts .catalog-toolbar__right {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.all-gifts .catalog-toolbar__dd-toggle {
+  margin: 2px auto;
+}
+
 @media only screen and (max-width: 767px) {
   .d-desktop-none {
     display: block;
@@ -1037,8 +1087,13 @@ p {
     line-height: 31px;
   }
 
+  .slider-populary {
+    margin: 30px 0;
+  }
+
   .slider-populary__header:after {
     height: 30px;
+    background-size: cover;
   }
 
   .slider-populary__title {
@@ -1071,8 +1126,13 @@ p {
     display: none;
   }
 
+  .select-gifts {
+    padding: 30px 0;
+  }
+
   .select-gifts__header:after {
     height: 30px;
+    background-size: cover;
   }
 
   .select-gifts--who .select-gifts__name {
@@ -1101,6 +1161,18 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 
+  .select-gifts__body.show .select-gifts__item:nth-child(n+9) {
+    display: block;
+  }
+
+  .select-gifts__item {
+    padding: 10px;
+  }
+
+  .select-gifts__item:nth-child(n+9) {
+    display: none;
+  }
+
   .select-gifts__title {
     font-size: 28px;
     line-height: 26px;
@@ -1115,6 +1187,14 @@ p {
     display: block;
   }
 
+  .article {
+    padding: 0;
+  }
+
+  .article:after {
+    display: none;
+  }
+
   .article__header {
     margin-bottom: 30px;
     position: relative;
@@ -1127,6 +1207,7 @@ p {
     left: 0;
     background-image: url("../img/23/h1_back.svg");
     background-position: center;
+    background-size: cover;
     width: 100%;
     height: 30px;
   }
@@ -1172,27 +1253,36 @@ p {
     color: #333333;
   }
 
-  .footer-nav__img {
+  .footer-nav-23-8 {
+    padding: 0 0 40px;
+  }
+
+  .footer-nav-23-8__img {
     width: 120px;
     margin-right: 10px;
   }
 
-  .footer-nav__img img {
+  .footer-nav-23-8__img img {
     max-width: 100%;
     height: auto;
   }
 
-  .footer-nav__name {
+  .footer-nav-23-8__name {
     font-size: 18px;
     line-height: 21px;
     display: inline;
   }
 
-  .footer-nav__text {
+  .footer-nav-23-8__text {
     font-size: 14px;
   }
 
+  .all-gifts {
+    margin: 30px 0;
+  }
+
   .all-gifts__header:after {
+    background-size: cover;
     height: 30px;
   }
 
