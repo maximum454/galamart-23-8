@@ -1087,6 +1087,37 @@ p {
     line-height: 31px;
   }
 
+  .menu {
+    background-image: url("../img/top-banner-item-bg.webp");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .menu__item {
+    background-image: none;
+  }
+
+  .menu__item.active .menu__img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .menu__img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .menu__img img {
+    width: 100%;
+    display: block;
+  }
+
+  .menu .swiper-slide {
+    width: 200px !important;
+  }
+
   .slider-populary {
     margin: 30px 0;
   }

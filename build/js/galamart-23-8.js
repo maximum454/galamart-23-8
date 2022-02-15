@@ -22,8 +22,8 @@ const swiperMenu = new Swiper('.swiper-container-menu', {
     observer: true,
     breakpoints: {
         320: {
-            slidesPerView: 1.5,
-
+            slidesPerView: 'auto',
+            centeredSlides: true,
         },
         768: {
             slidesPerView: 2,
